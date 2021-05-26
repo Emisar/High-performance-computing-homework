@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/tabs.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/tasks.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/tables.css" />
+    <script src="js/utill/table.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tasks/task1.js"></script>
+    <script src="js/tasks/task2.js"></script>
+    <script src="js/tasks/task3.js"></script>
+    <script src="js/tasks/task4.js"></script>
+    <script src="js/tasks/task5.js"></script>
+    <script src="js/tasks/task6.js"></script>
+    <script src="js/tasks/task7.js"></script>
+</head>
+
+<body>
+    <div class="tabs">
+        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+        <label for="tab-btn-1">Задание 1</label>
+        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+        <label for="tab-btn-2">Задание 2</label>
+        <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+        <label for="tab-btn-3">Задание 3</label>
+        <input type="radio" name="tab-btn" id="tab-btn-4" value="">
+        <label for="tab-btn-4">Задание 4</label>
+        <input type="radio" name="tab-btn" id="tab-btn-5" value="">
+        <label for="tab-btn-5">Задание 5</label>
+        <input type="radio" name="tab-btn" id="tab-btn-6" value="">
+        <label for="tab-btn-6">Задание 6</label>
+        <input type="radio" name="tab-btn" id="tab-btn-7" value="">
+        <label for="tab-btn-7">Задание 7</label>
+
+        <div class="task" id="task1">
+            <div class="task-description">
+                <span class="task-title">
+                    Задание 1
+                </span>
+                <span class="task-text">
+                    По заданной квадратной матрице n×n из нулей и единиц определите, может ли данная матрица быть
+                    матрицей смежности простого неориентированного графа.
+                </span>
+                <div class="task-additional">
+                    <span>
+                        Квадратная матрица — это матрица, у которой число строк совпадает с числом столбцов.
+                    </span>
+                    <span>
+                        Матрица смежности - это квадратная матрица, в которой каждый элемент принимает одно из двух
+                        значений: 0 или 1.
+                    </span>
+                    <span>
+                        Простой граф - это граф, который не имеет петель и имеет не более одного ребра
+                        между любыми двумя различными вершинами.
+                    </span>
+                </div>
+            </div>
+            <div class="task-solution">
+                <span class="task-solution-title">
+                    Решение
+                </span>
+                <div class="task-section">
+                    <span class="task-input-title">
+                        Введите размер квадратной матрицы:
+                    </span>
+                    <input type="number" class="task-input-field">
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-input-title">
+                        Введите элементы матрицы:
+                    </span>
+                    <div class="task-matrix-div"></div>
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-answer-title">
+                        Ответ:
+                    </span>
+                    <span class="task-answer"></span>
+                </div>
+            </div>
+        </div>
+        <div class="task" id="task2">
+            <div class="task-description">
+                <span class="task-title">
+                    Задание 2
+                </span>
+                <span class="task-text">
+                    По заданной матрице смежности неориентированного графа определите, содержит ли он петли.
+                </span>
+                <div class="task-additional">
+                    <span>
+                        Матрица смежности - это квадратная матрица, в которой каждый элемент принимает одно из двух
+                        значений: 0 или 1.
+                    </span>
+                    <span>
+                        Петля - ребро имеющее на обоих концах одну и ту же вершину.
+                    </span>
+                </div>
+            </div>
+            <div class="task-solution">
+                <span class="task-solution-title">
+                    Решение
+                </span>
+                <div class="task-section">
+                    <span class="task-input-title">
+                        Введите размер квадратной матрицы:
+                    </span>
+                    <input type="number" class="task-input-field">
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-input-title">
+                        Введите элементы матрицы:
+                    </span>
+                    <div class="task-matrix-div"></div>
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-answer-title">
+                        Ответ:
+                    </span>
+                    <span class="task-answer"></span>
+                </div>
+            </div>
+        </div>
+        <div class="task" id="task3">
+            <div class="task-description">
+                <span class="task-title">
+                    Задание 3
+                </span>
+                <span class="task-text">
+                    Простой неориентированный граф задан матрицей смежности. Найдите количество ребер в графе.
+                </span>
+                <div class="task-additional">
+                    <span>
+                        Матрица смежности - это квадратная матрица, в которой каждый элемент принимает одно из двух
+                        значений: 0 или 1.
+                    </span>
+                    <span>
+                        Простой граф - это граф, который не имеет петель и имеет не более одного ребра
+                        между любыми двумя различными вершинами.
+                    </span>
+                </div>
+            </div>
+            <div class="task-solution">
+                <span class="task-solution-title">
+                    Решение
+                </span>
+                <div class="task-section">
+                    <span class="task-input-title">
+                        Введите размер квадратной матрицы:
+                    </span>
+                    <input type="number" class="task-input-field">
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-input-title">
+                        Введите элементы матрицы:
+                    </span>
+                    <div class="task-matrix-div"></div>
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-answer-title">
+                        Ответ:
+                    </span>
+                    <span class="task-answer"></span>
+                </div>
+            </div>
+        </div>
+        <div class="task" id="task4">
+            <div class="task-description">
+                <span class="task-title">
+                    Задание 4
+                </span>
+                <span class="task-text">
+                    Ориентированный граф задан матрицей смежности. Найдите количество ребер в графе.
+                </span>
+                <div class="task-additional">
+                    <span>
+                        Матрица смежности - это квадратная матрица, в которой каждый элемент принимает одно из двух
+                        значений: 0 или 1.
+                    </span>
+                    <span>
+                        Ориентированный граф - граф, рёбрам которого присвоено направление.
+                    </span>
+                </div>
+            </div>
+            <div class="task-solution">
+                <span class="task-solution-title">
+                    Решение
+                </span>
+                <div class="task-section">
+                    <span class="task-input-title">
+                        Введите размер квадратной матрицы:
+                    </span>
+                    <input type="number" class="task-input-field">
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-input-title">
+                        Введите элементы матрицы:
+                    </span>
+                    <div class="task-matrix-div"></div>
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-answer-title">
+                        Ответ:
+                    </span>
+                    <span class="task-answer"></span>
+                </div>
+            </div>
+        </div>
+        <div class="task" id="task5">
+            <div class="task-description">
+                <span class="task-title">
+                    Задание 5
+                </span>
+                <span class="task-text">
+                    Простой ориентированный граф задан матрицей смежности, выведите его представление в виде списка
+                    ребер.
+                </span>
+                <div class="task-additional">
+                    <span>
+                        Матрица смежности - это квадратная матрица, в которой каждый элемент принимает одно из двух
+                        значений: 0 или 1.
+                    </span>
+                    <span>
+                        Простой граф - это граф, который не имеет петель и имеет не более одного ребра
+                        между любыми двумя различными вершинами.
+                    </span>
+                    <span>
+                        Ориентированный граф - граф, рёбрам которого присвоено направление.
+                    </span>
+                </div>
+            </div>
+            <div class="task-solution">
+                <span class="task-solution-title">
+                    Решение
+                </span>
+                <div class="task-section">
+                    <span class="task-input-title">
+                        Введите размер квадратной матрицы:
+                    </span>
+                    <input type="number" class="task-input-field">
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-input-title">
+                        Введите элементы матрицы:
+                    </span>
+                    <div class="task-matrix-div"></div>
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-answer-title">
+                        Ответ:
+                    </span>
+                    <span class="task-answer"></span>
+                </div>
+            </div>
+        </div>
+        <div class="task" id="task6">
+            <div class="task-description">
+                <span class="task-title">
+                    Задание 6
+                </span>
+                <span class="task-text">
+                    Неориентированный граф задан списком ребер. Проверьте, содержит ли он параллельные ребра.
+                </span>
+                <div class="task-additional">
+                    <span>
+                        Кратные рёбра (параллельные рёбра) - это два и более рёбер, на концах которых находятся одни и
+                        те же две вершины.
+                    </span>
+                </div>
+            </div>
+            <div class="task-solution">
+                <span class="task-solution-title">
+                    Решение
+                </span>
+                <div class="task-section">
+                    <span class="task-input-title">
+                        Введите колличество ребер:
+                    </span>
+                    <input type="number" class="task-input-field">
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-input-title">
+                        Введите ребра:
+                    </span>
+                    <div class="task-matrix-div"></div>
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-answer-title">
+                        Ответ:
+                    </span>
+                    <span class="task-answer"></span>
+                </div>
+            </div>
+        </div>
+        <div class="task" id="task7">
+            <div class="task-description">
+                <span class="task-title">
+                    Задание 7
+                </span>
+                <span class="task-text">
+                    Неориентированный граф задан списком ребер. Найдите степени всех вершин графа.
+                </span>
+                <div class="task-additional">
+                    <span>
+                        Степенью вершины называется число ребер графа, которым принадлежит эта вершина.
+                    </span>
+                </div>
+            </div>
+            <div class="task-solution">
+                <span class="task-solution-title">
+                    Решение
+                </span>
+                <div class="task-section">
+                    <span class="task-input-title">
+                        Введите колличество ребер:
+                    </span>
+                    <input type="number" class="task-input-field">
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-input-title">
+                        Введите ребра:
+                    </span>
+                    <div class="task-matrix-div"></div>
+                    <input type="button" class="task-input-button" value="Ввод">
+                </div>
+                <div class="task-section hide">
+                    <span class="task-answer-title">
+                        Ответ:
+                    </span>
+                    <span class="task-answer"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
